@@ -61,7 +61,7 @@ docker compose down
 ├── app.py                 # Flask application & Redis counter logic
 ├── Dockerfile             # Image build instructions for the Flask service
 ├── docker-compose.yaml    # Multi-container orchestration config
-── requirements.txt       # Python dependencies (flask, redis)
+|── requirements.txt       # Python dependencies (flask, redis)
 ├── README.md              # Project documentation
 └── git.sh                 # (Optional) Git workflow automation script
 ```
