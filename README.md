@@ -55,6 +55,7 @@ docker compose down
 ```
 ---
 #📂 Project Structure
+---
 3rd-project/
 ├── app.py                 # Flask application & Redis counter logic
 |── Dockerfile             # Image build instructions for the Flask service
