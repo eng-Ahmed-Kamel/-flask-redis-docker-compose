@@ -68,11 +68,13 @@ docker compose down
 -----
 
 #⚙️ How It Works
+```text
+
 1.The web service runs a Flask app that connects to the redis service via Docker's internal DNS (host='redis').
 2.Each request to / triggers cache.incr('hits'), which atomically increments the counter in Redis.
 3.A retry mechanism (up to 5 attempts with 0.5s delays) prevents crashes if Redis hasn't fully started yet.
 4.docker-compose.yaml maps host port 9000 → container port 5000 and mounts the local directory for live code updates during development.
-
+```
 ---
 
 #🛠 Development Notes:
