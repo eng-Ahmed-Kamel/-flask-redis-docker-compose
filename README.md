@@ -56,15 +56,17 @@ docker compose down
 ---
 #📂 Project Structure
 ---
+```text
 3rd-project/
-
 ├── app.py                 # Flask application & Redis counter logic
-|── Dockerfile             # Image build instructions for the Flask service
+├── Dockerfile             # Image build instructions for the Flask service
 ├── docker-compose.yaml    # Multi-container orchestration config
-├── requirements.txt       # Python dependencies (flask, redis)
+── requirements.txt       # Python dependencies (flask, redis)
 ├── README.md              # Project documentation
-|── git.sh                 # (Optional) Git workflow automation script
----
+└── git.sh                 # (Optional) Git workflow automation script
+```
+-----
+
 #⚙️ How It Works
 1.The web service runs a Flask app that connects to the redis service via Docker's internal DNS (host='redis').
 2.Each request to / triggers cache.incr('hits'), which atomically increments the counter in Redis.
