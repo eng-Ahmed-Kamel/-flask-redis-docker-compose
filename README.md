@@ -46,9 +46,9 @@ When you visit the application, it increments a counter stored in Redis and retu
 	```
 3. **Access the application**
    ```bash
-curl http://localhost:9000
-# or open http://localhost:9000 in your browser
+	curl http://localhost:9000
 	```
+   # or open http://localhost:9000 in your browser
 4. **Stop & clean up**
 ```bash
 docker compose down
