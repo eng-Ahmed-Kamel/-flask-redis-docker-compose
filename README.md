@@ -38,16 +38,17 @@ When you visit the application, it increments a counter stored in Redis and retu
    git clone https://github.com/eng-Ahmed-Kamel/-flask-redis-docker-compose.git
    
    cd 3rd-project
-```
+   ```
+
 2. **Build & start the containers**
    ```bash
 	docker compose up -d
-```
+	```
 3. **Access the application**
    ```bash
 curl http://localhost:9000
 # or open http://localhost:9000 in your browser
-```
+	```
 4. **Stop & clean up**
 ```bash
 docker compose down
